@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu Kumar | Developer Portfolio</title>
+    <meta name="description" content="Divyanshu Kumar — Full-Stack & AI Developer. Building scalable web platforms, AI systems, and embedded robotics.">
+    <meta property="og:title" content="Divyanshu Kumar | Developer Portfolio">
+    <meta property="og:description" content="Full-Stack & AI Developer — React, Spring Boot, Python, YOLOv8, Embedded Systems">
+    <meta property="og:image" content="Divyanshu_Kumar.png">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Divyanshu Kumar">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      emailjs.init('mRfMW4-UsBu7-JGQT');
+    </script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-ring"></div>
+
+    <nav id="navbar">
+        <div class="nav-left">D.Kumar</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-right">
+            <a href="#contact" class="btn">Let's Talk →</a>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="grid-overlay"></div>
+        <div class="glow-bg"></div>
+
+        <div class="hero-content">
+            <div class="label scroll-reveal"
+                style="display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono); color: var(--accent); background: rgba(110, 255, 160, 0.05); border: 1px solid rgba(110, 255, 160, 0.3); padding: 8px 16px; border-radius: 50px; margin-bottom: 24px;">
+                <span
+                    style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px var(--accent); animation: blink 1.5s infinite;"></span>
+                Available for work
+            </div>
+            <h1 class="scroll-reveal"><span class="text-gradient">Divyanshu Kumar</span><br><span
+                    class="outline">Software Engineer</span></h1>
+
+            <p class="hero-value-prop scroll-reveal"
+                style="font-size: 1.1rem; color: var(--muted); margin-bottom: 30px; line-height: 1.6;">
+                Building scalable web platforms,<br>AI-powered systems, and real-time applications.
+            </p>
+
+            <div class="credibility-badges scroll-reveal"
+                style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px;">
+                <span class="badge-item"><svg viewBox="0 0 24 24"
+                        style="width: 20px; height: 20px; color: var(--accent); vertical-align: middle; margin-right: 8px;">
+                        <path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg> Built platforms supporting 300+ users</span>
+                <span class="badge-item"><svg viewBox="0 0 24 24"
+                        style="width: 20px; height: 20px; color: var(--accent); vertical-align: middle; margin-right: 8px;">
+                        <path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg> AI systems with 95% prediction accuracy</span>
+                <span class="badge-item"><svg viewBox="0 0 24 24"
+                        style="width: 20px; height: 20px; color: var(--accent); vertical-align: middle; margin-right: 8px;">
+                        <path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg> 20+ projects built</span>
+            </div>
+
+            <div class="hero-links scroll-reveal" style="display: flex; gap: 16px; margin-bottom: 30px;">
+                <a href="mailto:dk5506934@gmail.com" class="btn secondary">Email</a>
+                <a href="https://github.com/Divyanshu-2907" target="_blank" rel="noopener noreferrer"
+                    class="btn secondary">GitHub</a>
+                <a href="https://www.linkedin.com/in/divyanshukr004" target="_blank" rel="noopener noreferrer"
+                    class="btn secondary">LinkedIn</a>
+                <a href="Divyanshu_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                    class="btn secondary">Resume</a>
+            </div>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="#contact" class="btn secondary"
+                    style="background: transparent; border-color: transparent;">Contact Me</a>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </div>
+
+        <div class="hero-code-block">
+            <div class="panel-header">
+                <span class="dot" style="background:#ff5f56"></span>
+                <span class="dot" style="background:#ffbd2e"></span>
+                <span class="dot" style="background:#27c93f"></span>
+            </div>
+            <pre><code id="typing-code"></code></pre>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="two-col">
+            <div class="about-text scroll-reveal">
+                <p>I'm a Final-year ECE student at Bihar Engineering University with a deep passion 
+                for building things end-to-end — from full-stack web platforms to AI-powered embedded systems.</p>
+                <p>I've architected platforms supporting 300+ concurrent users at CertifyO, built 
+                AI systems with 95% prediction accuracy, and engineered a 25-DOF hexapod robot 
+                with a YOLOv8 vision pipeline as my B.Tech capstone — because I believe the most 
+                interesting problems live at the intersection of software and hardware.</p>
+                <p>When I'm not coding, I'm tuning robot gaits, solving LeetCode problems (450+), 
+                or exploring how AI agents can interact with the physical world.</p>
+
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <h3>0-1</h3>
+                        <span>Years Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>20+</h3>
+                        <span>Projects</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>5</h3>
+                        <span>Internships</span>
+                    </div>
+                    <div class="stat-box">
+                        <h3>∞</h3>
+                        <span>Coffee</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image scroll-reveal">
+                <!-- Replace 'profile.jpg' with the actual path to your photo -->
+                <img src="Divyanshu_Kumar.png" alt="Divyanshu Kumar" class="profile-photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="title scroll-reveal">The tech behind the magic</h2>
+
+        <div class="marquee-wrapper scroll-reveal">
+            <div class="marquee row-1">
+                <span>React</span><span>Next.js</span><span>TypeScript</span>
+                <span>Node.js</span><span>Tailwind</span><span>MongoDB</span>
+                <!-- duplicate below -->
+                <span>React</span><span>Next.js</span><span>TypeScript</span>
+                <span>Node.js</span><span>Tailwind</span><span>MongoDB</span>
+            </div>
+            <div class="marquee row-2">
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>AWS</span>
+                <span>GSAP</span>
+                <span>Framer Motion</span>
+
+                <span>PostgreSQL</span>
+                <span>Docker</span>
+                <span>AWS</span>
+                <span>GSAP</span>
+                <span>Framer Motion</span>
+            </div>
+        </div>
+
+        <div class="skills-grid scroll-reveal">
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">React & Next.js</span>
+                    <span class="skill-pct">90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">Java & Spring Boot</span>
+                    <span class="skill-pct">85%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="85%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">Python & FastAPI</span>
+                    <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">Machine Learning</span>
+                    <span class="skill-pct">75%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="75%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">PostgreSQL & MongoDB</span>
+                    <span class="skill-pct">80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="80%"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span class="skill-name">AWS & Docker</span>
+                    <span class="skill-pct">70%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="fill" style="width:0" data-width="70%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="section">
+        <h2 class="title text-center scroll-reveal">Tech Ecosystem</h2>
+        <div class="tech-map scroll-reveal">
+
+            <svg class="tech-lines" preserveAspectRatio="none" viewBox="0 0 100 100">
+                <line x1="50" y1="50" x2="18" y2="15" />
+                <line x1="50" y1="50" x2="82" y2="15" />
+                <line x1="50" y1="50" x2="23" y2="85" />
+                <line x1="50" y1="50" x2="77" y2="85" />
+                <line x1="50" y1="50" x2="19" y2="46" />
+                <line x1="50" y1="50" x2="81" y2="46" />
+            </svg>
+
+            <div class="tech-center">AI + Full Stack Developer</div>
+            <div class="tech-group frontend">
+                <h4>Frontend</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="Used to build scalable UI components">React</span>
+                    <span data-tooltip="React framework for production">Next.js</span>
+                    <span data-tooltip="Modern web semantics">HTML5</span>
+                    <span data-tooltip="Premium styling">CSS3</span>
+                    <span data-tooltip="Client scripting logic">JavaScript</span>
+                </div>
+            </div>
+            <div class="tech-group backend">
+                <h4>Backend</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="Fast event-driven runtime">Node.js</span>
+                    <span data-tooltip="Enterprise-grade Java backend">Spring Boot</span>
+                    <span data-tooltip="High performance Python APIs">FastAPI</span>
+                    <span data-tooltip="Scalable architecture">REST APIs</span>
+                    <span data-tooltip="Real-time connections">WebSockets</span>
+                </div>
+            </div>
+            <div class="tech-group db">
+                <h4>Databases</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="Relational data modeling">PostgreSQL</span>
+                    <span data-tooltip="Flexible document storage">MongoDB</span>
+                    <span data-tooltip="In-memory caching">Redis</span>
+                </div>
+            </div>
+            <div class="tech-group cloud">
+                <h4>Cloud & DevOps</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="EC2, S3, RDS deployments">AWS</span>
+                    <span data-tooltip="Containerized environments">Docker</span>
+                    <span data-tooltip="Version control">Git</span>
+                    <span data-tooltip="Repository management">GitHub</span>
+                </div>
+            </div>
+            <div class="tech-group ml">
+                <h4>AI / ML</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="Core ML algorithms and modeling">Machine Learning</span>
+                    <span data-tooltip="Neural networks and deep architectures">Deep Learning</span>
+                    <span data-tooltip="Image detection using YOLO, OpenCV">Computer Vision</span>
+                    <span data-tooltip="Text processing and language models">NLP</span>
+                    <span data-tooltip="Improving model performance and efficiency">Model Optimization</span>
+                </div>
+            </div>
+            <div class="tech-group genai">
+                <h4>Gen-AI & AI Engineering</h4>
+                <div class="tech-nodes">
+                    <span data-tooltip="Large Language Models like GPT">LLMs</span>
+                    <span data-tooltip="Retrieval-Augmented Generation systems">RAG</span>
+                    <span data-tooltip="Designing effective AI prompts">Prompt Engineering</span>
+                    <span data-tooltip="Deep learning framework used in projects">PyTorch</span>
+                    <span data-tooltip="Serving ML models via APIs (FastAPI)">Model Deployment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="title scroll-reveal">Experience</h2>
+        <div class="timeline scroll-reveal">
+            <div class="t-line"></div>
+
+            <div class="t-item scroll-reveal">
+                <div class="t-dot"></div>
+                <div class="t-content">
+                    <span class="t-date">Nov 2025 – Jan 2026</span>
+                    <h3>Java Full-Stack Developer Intern</h3>
+                    <span class="t-company">Infosys Springboard &bull; Remote</span>
+                    <p>Built and scaled full-stack platform managing real-time case submissions.</p>
+                    <ul class="t-bullets">
+                        <li>Engineered secure authentication systems leveraging JWT</li>
+                        <li>Built high-performance case submission & matching engine features</li>
+                        <li>Implemented real-time bi-directional chat using WebSockets</li>
+                        <li>Designed dynamic admin dashboards and automated notifications</li>
+                        <li>Integrated Google Maps API for geolocation and spatial tracking</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Spring
+                            Boot</span><span>React.js</span><span>PostgreSQL</span><span>JWT</span><span>WebSockets</span><span>Google
+                            Maps API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="t-item scroll-reveal">
+                <div class="t-dot"></div>
+                <div class="t-content">
+                    <span class="t-date">May 2025 – Jul 2025</span>
+                    <h3>Full-Stack Developer Intern</h3>
+                    <span class="t-company">CertifyO</span>
+                    <p>Architected and deployed a distributed intern management platform.</p>
+                    <ul class="t-bullets">
+                        <li>Engineered distributed platform supporting 300+ concurrent users</li>
+                        <li>Processed 10K+ API requests daily with 99.9% uptime</li>
+                        <li>Developed 20+ robust RESTful APIs</li>
+                        <li>Reduced latency by 40% using optimized MongoDB aggregation pipelines</li>
+                        <li>Built an AI-powered mock interview system forecasting candidate scores</li>
+                        <li>Implemented distributed Redis caching and deployed via AWS EC2</li>
+                        <li>Improved overall system throughput and performance by 60%</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Redis</span><span>AWS
+                            EC2</span><span>Python</span><span>FastAPI</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="t-item scroll-reveal">
+                <div class="t-dot"></div>
+                <div class="t-content">
+                    <span class="t-date">Nov 2024 – Dec 2024</span>
+                    <h3>AI Intern</h3>
+                    <span class="t-company">Edunet Foundation</span>
+                    <p>Developed an AI-powered chatbot platform for automated enterprise query handling.</p>
+                    <ul class="t-bullets">
+                        <li>Built conversational AI handling 1000+ daily queries</li>
+                        <li>Achieved 92% accurate predictions utilizing advanced NLP models</li>
+                        <li>Integrated beautiful Streamlit interfaces for real-time interaction</li>
+                        <li>Improved automated response turnaround times by 35%</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Python</span><span>NLP</span><span>Machine Learning</span><span>Streamlit</span><span>REST
+                            APIs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="t-item scroll-reveal">
+                <div class="t-dot"></div>
+                <div class="t-content">
+                    <span class="t-date">Dec 2025 – Jan 2026</span>
+                    <h3>Electrical Engineering Intern</h3>
+                    <span class="t-company">North Bihar Power Distribution Company Ltd &bull; Ekma, Chapra</span>
+                    <p>Analyzed high-voltage operations across sub-station infrastructure.</p>
+                    <ul class="t-bullets">
+                        <li>Monitored 33/11 KV power distribution systems</li>
+                        <li>Analyzed load management and grid protection mechanisms</li>
+                        <li>Enforced grid maintenance and industrial safety protocols</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="t-item scroll-reveal">
+                <div class="t-dot"></div>
+                <div class="t-content">
+                    <span class="t-date">Jun 2025</span>
+                    <h3>Signal & Telecommunication Intern</h3>
+                    <span class="t-company">East Central Railway</span>
+                    <p>Studied automated railway signalling and communication systems.</p>
+                    <ul class="t-bullets">
+                        <li>Analyzed automatic and absolute block signalling operations</li>
+                        <li>Monitored optical fiber communication networks and track circuits</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="section">
+        <h2 class="title text-center scroll-reveal">Impact Metrics</h2>
+        <div class="impact-grid scroll-reveal">
+            <div class="impact-card">
+                <h3><span class="impact-number" data-target="300">0</span>+</h3>
+                <p>Concurrent Users Managed</p>
+            </div>
+            <div class="impact-card">
+                <h3><span class="impact-number" data-target="10">0</span>K+</h3>
+                <p>Daily API Requests Processed</p>
+            </div>
+            <div class="impact-card">
+                <h3><span class="impact-number" data-target="40">0</span>%</h3>
+                <p>System Latency Reduction</p>
+            </div>
+            <div class="impact-card">
+                <h3><span class="impact-number" data-target="95">0</span>%</h3>
+                <p>AI Prediction Accuracy</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="title scroll-reveal">Personal Projects</h2>
+        <div class="projects-grid scroll-reveal">
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>HexMind — AI Firmware Co-Pilot</h3>
+                    <p>Natural language interface for real-time hexapod robot firmware control, built using Claude Opus with a Python backend and React visualizer over USB serial.</p>
+                    <ul class="p-bullets">
+                        <li>Natural language → servo command translation</li>
+                        <li>Real-time gait visualization in React</li>
+                        <li>Python backend with USB serial bridge</li>
+                        <li>Submitted for Anthropic hackathon</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Python</span><span>React</span><span>Claude API</span><span>Arduino</span><span>USB Serial</span>
+                    </div>
+                    <div class="p-arch">Natural Language → Claude API → Python → USB Serial → Arduino Mega</div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/Hexmind" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>25-DOF Hexapod Robot</h3>
+                    <p>B.Tech capstone: a fully custom hexapod robot with sinusoidal tripod gait, IK/FK, a 4-DOF robotic arm, NRF24L01 wireless control, and a YOLOv8 obstacle detection vision pipeline.</p>
+                    <ul class="p-bullets">
+                        <li>25 servo DOFs + 4-DOF arm — firmware v4.0</li>
+                        <li>Sinusoidal IK/FK tripod gait with smoothing</li>
+                        <li>YOLOv8n vision pipeline via ESP32-CAM</li>
+                        <li>NRF24L01 wireless + custom packet protocol</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>C++</span><span>Arduino</span><span>YOLOv8</span><span>Python</span><span>ESP32</span><span>Embedded Systems</span>
+                    </div>
+                    <div class="p-arch">ESP32-CAM → YOLOv8 (Laptop) → NRF24L01 → Arduino Mega → 25 Servos</div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/Hexapod_Robot" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/></svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>Game Master Agent</h3>
+                    <p>AI-powered gaming assistant managing logic, decisions, and automated gameplay interactions.</p>
+                    <ul class="p-bullets">
+                        <li>automated game strategy logic</li>
+                        <li>agent-based decision system</li>
+                        <li>real-time interaction</li>
+                        <li>modular game architecture</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Python</span><span>AI Agents</span><span>Machine Learning</span>
+                    </div>
+                    <div class="p-arch">User &rarr; Client (React) &rarr; API (Python) &rarr; AI Agents</div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/Game-Master-Agent" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                            </svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>RaiseNest – Crowdfunding Platform</h3>
+                    <p>A full-stack platform where users can securely fund and track contributions.</p>
+                    <ul class="p-bullets">
+                        <li>campaign creation and management</li>
+                        <li>secure contribution system</li>
+                        <li>dashboard for tracking funds</li>
+                        <li>responsive UI</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+                    </div>
+                    <div class="p-arch">User &rarr; UI (React) &rarr; API (Node/Express) &rarr; Database (MongoDB)</div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/RaiseNest-CrowdFunding" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                            </svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>AI Mock Interview System</h3>
+                    <p>AI-powered prep platform scaling realistic automated mock interview scenarios.</p>
+                    <ul class="p-bullets">
+                        <li>AI-based interview evaluation</li>
+                        <li>automated feedback system</li>
+                        <li>scoring and performance analytics</li>
+                        <li>real-time interaction</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Python</span><span>FastAPI</span><span>Machine Learning</span><span>React</span>
+                    </div>
+                    <div class="p-arch">Client &rarr; API (FastAPI) &rarr; ML Model &rarr; Real-time Feedback</div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/AI_Mock_Interview" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                            </svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="p-info">
+                    <h3>Road Hazard Detection System</h3>
+                    <p>AI computer vision system dynamically detecting road hazards like potholes.</p>
+                    <ul class="p-bullets">
+                        <li>object detection model</li>
+                        <li>road safety monitoring</li>
+                        <li>real-time hazard detection</li>
+                        <li>data processing pipeline</li>
+                    </ul>
+                    <div class="t-tags">
+                        <span>Python</span><span>OpenCV</span><span>Computer Vision</span><span>Deep Learning</span>
+                    </div>
+                    <div class="p-arch">Camera Input &rarr; OpenCV Pipeline &rarr; Neural Network &rarr; Dash Alert
+                    </div>
+                    <div class="p-links">
+                        <a href="https://github.com/Divyanshu-2907/Road_Hazard_Detection" target="_blank"
+                            rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" />
+                            </svg>
+                            GitHub <span class="arrow">↗</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="why-hire-me" class="section">
+        <h2 class="title text-center scroll-reveal">Why Hire Me</h2>
+        <div class="impact-grid scroll-reveal" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+            <div class="impact-card">
+                <h3 style="font-size: 2rem; margin-bottom: 20px;">System Thinking</h3>
+                <p style="text-transform: none; font-size: 1rem; color: var(--text);">I don't just write code; I
+                    architect scalable systems holding up to 10K+ API requests daily.</p>
+            </div>
+            <div class="impact-card">
+                <h3 style="font-size: 2rem; margin-bottom: 20px;">AI + Full Stack</h3>
+                <p style="text-transform: none; font-size: 1rem; color: var(--text);">Bridging the gap between
+                    intelligent ML models and beautiful, responsive web applications seamlessly.</p>
+            </div>
+            <div class="impact-card">
+                <h3 style="font-size: 2rem; margin-bottom: 20px;">Performance Focus</h3>
+                <p style="text-transform: none; font-size: 1rem; color: var(--text);">Obsessed with reducing latency,
+                    optimizing queries, and achieving pristine 99.9% application uptime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="github" class="section">
+            <h2 class="title text-center scroll-reveal">GitHub Activity</h2>
+            <div class="github-container scroll-reveal">
+                <div class="github-stats">
+                    <div class="g-stat">
+                        <h3>1,200+</h3><span>Contributions</span>
+                    </div>
+                    <div class="g-stat">
+                        <h3>45</h3><span>Repositories</span>
+                    </div>
+                    <div class="g-stat">
+                        <h3 style="font-size: 1.5rem; margin-top: 10px;">JavaScript & Python</h3><span>Main
+                            Languages</span>
+                    </div>
+                </div>
+
+                <div style="text-align:center; margin: 20px 0;">
+                    <img 
+                        src="https://ghchart.rshah.org/6effa0/Divyanshu-2907" 
+                        alt="Divyanshu's GitHub contribution chart"
+                        style="max-width:100%; border-radius:8px;"
+                    />
+                </div>
+
+                <div class="text-center" style="margin-top: 40px;">
+                    <a href="https://github.com/Divyanshu-2907" target="_blank" class="btn primary">View Full
+                        Profile</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section text-center">
+            <div class="contact-wrap scroll-reveal">
+                <div class="label"
+                    style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 20px; font-family: var(--font-mono); color: var(--accent); background: rgba(110, 255, 160, 0.05); border: 1px solid var(--accent); padding: 8px 16px; border-radius: 50px;">
+                    <span
+                        style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px var(--accent); animation: blink 1.5s infinite;"></span>
+                    Available for opportunities
+                </div>
+                <h2 class="large-title">Got an idea?<br>Let's build it.</h2>
+                <div class="contact-links">
+                    <a href="mailto:dk5506934@gmail.com" class="btn secondary">Email</a>
+                    <a href="https://github.com/Divyanshu-2907" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary">GitHub</a>
+                    <a href="https://www.linkedin.com/in/divyanshukr004" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary">LinkedIn</a>
+                    <a href="Divyanshu_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                        class="btn secondary">Resume</a>
+                </div>
+
+                <div class="contact-card">
+                    <form id="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+                        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" id="submit-btn" class="btn primary">Send Message</button>
+                    </form>
+                    <div id="success-msg" class="hidden">
+                        <div class="check">✓</div>
+                        <h3>Message Sent!</h3>
+                        <p>I will get back to you shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="f-left">Crafted with precision &bull; Designed with passion &copy; 2026 Divyanshu Kumar</div>
+            <div class="f-right">
+                <a href="https://github.com/Divyanshu-2907" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/divyanshukr004" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

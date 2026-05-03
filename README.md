@@ -19,7 +19,7 @@ A modern, responsive developer portfolio designed to showcase my projects, profe
 
 ## 🌐 Live Demo
 
-You can view the live portfolio here: **[Insert Live Link Here]**
+You can view the live portfolio here: **https://divyanshu-2907.github.io/My_Portfolio/**
 
 ---
 *Feel free to explore the code! If you have any questions or want to collaborate, drop me a message through the contact form on the website.*

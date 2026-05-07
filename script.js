@@ -5,7 +5,16 @@ const cursorRing = document.querySelector('.cursor-ring');
 let mouseX = 0, mouseY = 0;
 let ringX = 0, ringY = 0;
 
+const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+if (isTouchDevice) {
+    cursor.style.display = 'none';
+    cursorRing.style.display = 'none';
+    document.body.style.cursor = 'default';
+}
+
 document.addEventListener('mousemove', (e) => {
+    if (isTouchDevice) return;
     mouseX = e.clientX;
     mouseY = e.clientY;
 
@@ -16,6 +25,7 @@ document.addEventListener('mousemove', (e) => {
 
 // Smooth animate ring loop
 const renderRing = () => {
+    if (isTouchDevice) return;
     ringX += (mouseX - ringX) * 0.15;
     ringY += (mouseY - ringY) * 0.15;
 
@@ -35,12 +45,32 @@ interactives.forEach(el => {
 
 // Navbar scroll effect
 const navbar = document.getElementById('navbar');
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
     } else {
         navbar.classList.remove('scrolled');
     }
+});
+
+if (menuToggle) {
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    });
+}
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        document.body.style.overflow = '';
+    });
 });
 
 // Smooth Scrolling
